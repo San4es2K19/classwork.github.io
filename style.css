@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    min-width:150px;
+    background:lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.flex-item{
+    padding: 15px;
+    border: 1px solid red;
+    height: auto;
+    flex-basis: 100px;
+}
+.flex-item:nth-child(2){
+    order: 1;
+    background: springgreen;
+    flex-grow:2;
+}
+.flex-item:nth-child(4){
+    order: 2;
+    background: springgreen;
+    flex-grow: 4;
+    align-self: flex-end;
+}
+.flex-item:nth-child(1){
+    order: 3;
+    background: springgreen;
+}
